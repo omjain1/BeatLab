@@ -410,7 +410,7 @@ header .song-side::before{
     position: absolute;
     width: 100%;
     height: 300px;
-    background: url('/lisa.png');
+    background: url('/img/lisa.png');
     background-size:200px;
     background-repeat: no-repeat;
     background-position: top 35% right 2%;
@@ -423,7 +423,7 @@ header .song-side .jen::before{
     position: absolute;
     width: 100%;
     height: 300px;
-    background: url('/jen.png');
+    background: url('/img/jen.png');
     background-size:200px;
     background-repeat: no-repeat;
     background-position: top 120% right 35%;
@@ -435,7 +435,7 @@ header .song-side .rose::before{
     position: absolute;
     width: 100%;
     height: 300px;
-    background: url('/rose.png');
+    background: url('/img/rose.png');
     background-size:150px;
     background-repeat: no-repeat;
     background-position: top 190% right 22%;
@@ -448,7 +448,7 @@ header .song-side .jisoo::before{
     position: absolute;
     width: 100%;
     height: 300px;
-    background: url('/jisoo.png');
+    background: url('/img/jisoo.png');
     background-size:150px;
     background-repeat: no-repeat;
     background-position: top 80% right 50%;

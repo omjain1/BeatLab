@@ -78,84 +78,84 @@ const songs = [
         id:'7',
         songName:`Butter
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">BTS</div>`,
-        poster:"/1.png"
+        poster:"/img/1.png"
     },
 
     {
         id:'8',
         songName:`Let Me Down Slowly
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">Alec Benjamin</div>`,
-        poster:"/8.png"
+        poster:"/img/8.png"
     },
 
     {
         id:'9',
         songName:`Beaultiful Mistakes<br>
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">Maroon5</div>`,
-        poster:"/9.png"
+        poster:"/img/9.png"
     },
 
     {
         id:'10',
         songName:`Bad Habits
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">Ed Sheeran</div>`,
-        poster:"/10.png"
+        poster:"/img/10.png"
     },
 
     {
         id:'11',
         songName:`Liggi
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">Riwitz</div>`,
-        poster:"/11.png"
+        poster:"/img/11.png"
     },
 
     {
         id:'12',
         songName:`Cinderella's Dead
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">EMELINE</div>`,
-        poster:"/12.png"
+        poster:"/img/12.png"
     },
 
     {
         id:'13',
         songName:`I Like Me Better
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">Lauv</div>`,
-        poster:"/13.png"
+        poster:"/img/13.png"
     },
 
     {
         id:'14',
         songName:`2002
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">Anne Marie</div>`,
-        poster:"/14.png"
+        poster:"/img/14.png"
     },
 
     {
         id:'15',
         songName:`Pink Venom
         <div class="sub">Blackpink</div>`,
-        poster:"/blackp.png"
+        poster:"/img/blackp.png"
     }
 
     // {
     //     id:'16',
     //     songName:`My Head & My Heart
     //     <div class="sub">Seori</div>`,
-    //     poster:"/2.jpg"
+    //     poster:"/img/2.jpg"
     // },
 
     // {
     //     id:'17',
     //     songName:`My Head & My Heart
     //     <div class="sub">Seori</div>`,
-    //     poster:"/2.jpg"
+    //     poster:"/img/2.jpg"
     // },
 
     // {
     //     id:'18',
     //     songName:`My Head & My Heart
     //     <div class="sub">Seori</div>`,
-    //     poster:"/2.jpg"
+    //     poster:"/img/2.jpg"
     // },
 
 
@@ -270,7 +270,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
         el.target.classList.add('bi-pause-circle-fill');
         music.src = `music/${index}.mp3`;
         
-        poster_img_play.src = `/${index}.png`;
+        poster_img_play.src = `/img/${index}.png`;
         music.play();
         masterPlay.className = "bi bi-pause-fill"
 
@@ -311,7 +311,7 @@ back.addEventListener('click', ()=>{
     
     music.src = `/music/${index}.mp3`;
     
-    poster_img_play.src = `/${index}.png`;
+    poster_img_play.src = `/img/${index}.png`;
     music.play();
     
 
@@ -342,7 +342,7 @@ next.addEventListener('click', ()=>{
     
     music.src = `/music/${index}.mp3`;
     
-    poster_img_play.src = `/${index}.png`;
+    poster_img_play.src = `/img/${index}.png`;
     music.play();
     masterPlay.className = "bi bi-pause-fill";
 
@@ -369,7 +369,7 @@ banner.addEventListener('click', ()=>{
     index = 15;
     music.src = `/music/Pink-Venom.mp3`;
     
-    poster_img_play.src = `/blackp.png`;
+    poster_img_play.src = `/img/blackp.png`;
     music.play();
     masterPlay.className = "bi bi-pause-fill";
 
