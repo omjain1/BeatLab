@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify – Web Player</title>
-    <link rel="icon" sizes="32x32" href="/img/fav.ico">
-    <link rel="stylesheet" href="/style.css">
+    <title>BeatLab - Web Player</title>
+    <link rel="icon" sizes="32x32" href="/static/img/Marcus-Roberto-Google-Play-Google-Play-Music.512.png">
+    <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     
 
@@ -14,8 +14,8 @@
 <body>
     <header>
         <div class="menu-side">
-            <img src="/img/img2.png" style="width: 40px;">
-            <h1>Spotify</h1>
+            <img src="/static/img/img2.png" style="width: 40px;">
+            <h1>BeatLab</h1>
             <div class="playlist">
                 <h4 class="active"><span></span><i class="bi bi-house"></i>Home</h4>
                 <h4 class="active"><span></span><i class="bi bi-music-note-list"></i>Last Played</h4>
@@ -87,18 +87,10 @@
                         <i class="bi playListPlay bi-play-circle-fill" id="6" style="right: 40px;
                         position: absolute;"></i>
                 </li>
-                <!-- <li class="songItem">
-                    <span>07</span>
-                    <img src="https://i1.sndcdn.com/artworks-nUJumEgxA52TdRBM-8G0zBA-t500x500.jpg" alt="Sachet Tandon">
-                    <h5>
-                        Barbaadiyan
-                        <div class="sub">Sachet Tandon</div>
-                    </h5>
-                    
-                </li> -->
             </div>
         </div>
         <div class="song-side">
+            <div class="lisa"></div>
             <div class="jen">
             </div>
             <div class="rose">
@@ -109,29 +101,22 @@
             <nav>
                 <ul>
                     <li>Discover <span></span></li>
-                    <li>My Libiary</li>
+                    <li><a href="http://127.0.0.1:8000/libiary">My Libiary</a></li>
                     <li>Podcast</li>
                 </ul>
                 <div class="search">
                     <i class="bi bi-search"></i>
                     <input type="text" placeholder="What do you want to Listen to?">  
                     <div class="search_result">
-                        <!-- <a href="#" class="card">
-                            <img src="/1.png" alt="">
-                            <div class="content">
-                                Lovers In the Night
-                                <div class="sub">Seori</div>
-                            </div>
-                        </a>
-
-                         -->
-                        
-                        
                     </div>
                 </div>
-                <div class="user">
-                    <!-- <i class="bi bi-person"></i> -->
-                    <img src="/img/rp.png" alt="user" title="Red Phoenix">
+                <div class="log">
+                    <a href="http://127.0.0.1:8000/signin">Signin</a>
+                </div>
+                <div class="user" >
+
+                    
+                    <img src="/static/img/rp.png" alt="user" title="Red Phoenix">
                 </div>
             </nav>
             <div class="content">
@@ -157,7 +142,7 @@
                 <div class="pop-songs">
                     <li class="songItem">
                         <div class="img_play">
-                            <img src="/img/7.png" alt="Butter">
+                            <img src="/static/img/7.png" alt="Butter">
                             <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
                         </div>
                         <h5>Butter
@@ -168,7 +153,7 @@
 
                     <li class="songItem">
                         <div class="img_play">
-                            <img src="/img/2.jpg" alt="slowly">
+                            <img src="/static/img/2.jpg" alt="slowly">
                             <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
                         </div>
                         <h5>Let Me Down Slowly
@@ -179,7 +164,7 @@
 
                     <li class="songItem">
                         <div class="img_play">
-                            <img src="/img/3.jpg" alt="beautiful">
+                            <img src="/static/img/3.jpg" alt="beautiful">
                             <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
                         </div>
                         <h5>Beaultiful Mistakes
@@ -190,7 +175,7 @@
 
                     <li class="songItem">
                         <div class="img_play">
-                            <img src="/img/10.png" alt="bad">
+                            <img src="/static/img/10.png" alt="bad">
                             <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
                         </div>
                         <h5>Bad Habits
@@ -201,7 +186,7 @@
 
                     <li class="songItem">
                         <div class="img_play">
-                            <img src="/img/6.jpeg" alt="liggi">
+                            <img src="/static/img/6.jpeg" alt="liggi">
                             <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
                         </div>
                         <h5>Liggi
@@ -212,7 +197,7 @@
 
                     <li class="songItem">
                         <div class="img_play">
-                            <img src="/img/7.jpeg" alt="cinderella">
+                            <img src="/static/img/7.jpeg" alt="cinderella">
                             <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
                         </div>
                         <h5>Cinderella's Dead
@@ -223,7 +208,7 @@
 
                     <li class="songItem">
                         <div class="img_play">
-                            <img src="/img/5.jpeg" alt="Lauv">
+                            <img src="/static/img/5.jpeg" alt="Lauv">
                             <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
                         </div>
                         <h5>I Like Me Better
@@ -234,7 +219,7 @@
 
                     <li class="songItem">
                         <div class="img_play">
-                            <img src="/img/8.jpeg" alt="anne">
+                            <img src="/static/img/8.jpeg" alt="anne">
                             <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
                         </div>
                         <h5>2002
@@ -243,65 +228,234 @@
                         </h5>
                     </li>
 
-                    <!-- <li class="songItem">
-                        <div class="img_play">
-                            <img src="/img/8.jpeg" alt="anne">
-                            <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
-                        </div>
-                        <h5>2002
-                            <br>
-                            <div class="subtitle">Anne Marie</div>
-                        </h5>
-                    </li>
-
+                </div>
+            </div>
+            
+            <div class="popular-songs">
+                <div class="h4">
+                    <h4>Hot Hits Global</h4>
+                    <div class="btn-s">
+                        <i id="left_scrolli" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scrolli" class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="pop-songs1">
                     <li class="songItem">
                         <div class="img_play">
-                            <img src="/img/8.jpeg" alt="anne">
+                            <img src="/static/img/16.png" alt="Thosuand">
                             <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
                         </div>
-                        <h5>2002
+                        <h5>Thousand Miles
                             <br>
-                            <div class="subtitle">Anne Marie</div>
+                            <div class="subtitle">Kid Laori</div>
                         </h5>
                     </li>
 
                     <li class="songItem">
                         <div class="img_play">
-                            <img src="/img/8.jpeg" alt="anne">
+                            <img src="/static/img/17.jpg" alt="slowly">
                             <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
                         </div>
-                        <h5>2002
+                        <h5>Mood
                             <br>
-                            <div class="subtitle">Anne Marie</div>
+                            <div class="subtitle">Iann Dior</div>
                         </h5>
                     </li>
 
                     <li class="songItem">
                         <div class="img_play">
-                            <img src="/img/8.jpeg" alt="anne">
+                            <img src="/static/img/18.jpg" alt="beautiful">
                             <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
                         </div>
-                        <h5>2002
+                        <h5>No lie
                             <br>
-                            <div class="subtitle">Anne Marie</div>
+                            <div class="subtitle">Sean Paul</div>
                         </h5>
                     </li>
 
                     <li class="songItem">
                         <div class="img_play">
-                            <img src="/img/8.jpeg" alt="anne">
+                            <img src="/static/img/19.jpg" alt="bad">
                             <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
                         </div>
-                        <h5>2002
+                        <h5>At My Worst
                             <br>
-                            <div class="subtitle">Anne Marie</div>
+                            <div class="subtitle">Pink Sweat$</div>
                         </h5>
-                    </li> -->
+                    </li>
 
-                    
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/20.jpg" alt="liggi">
+                            <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                        </div>
+                        <h5>Golden Hour
+                            <br>
+                            <div class="subtitle">JVKE</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/21.jpg" alt="cinderella">
+                            <i class="bi playListPlay bi-play-circle-fill" id="21"></i>
+                        </div>
+                        <h5>Night Changes
+                            <br>
+                            <div class="subtitle">One Direction</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/22.jpg" alt="Lauv">
+                            <i class="bi playListPlay bi-play-circle-fill" id="22"></i>
+                        </div>
+                        <h5>Money
+                            <br>
+                            <div class="subtitle">Lisa</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/23.jpg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="23"></i>
+                        </div>
+                        <h5>Watermelon Sugar
+                            <br>
+                            <div class="subtitle">Harry Styles</div>
+                        </h5>
+                    </li>
+                </div>
+            </div>
+            
+            <div class="popular-songs">
+                <div class="h4">
+                    <h4>Made For You</h4>
+                    <div class="btn-s">
+                        <i id="left_scrollf" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scrollf" class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="pop-songs2">
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/24.jpg" alt="Butter">
+                            <i class="bi playListPlay bi-play-circle-fill" id="24"></i>
+                        </div>
+                        <h5>Infinity
+                            <br>
+                            <div class="subtitle">James Young</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/25.jpg" alt="slowly">
+                            <i class="bi playListPlay bi-play-circle-fill" id="25"></i>
+                        </div>
+                        <h5>Left and Right
+                            <br>
+                            <div class="subtitle">Charlie Puth</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/26.jpg" alt="beautiful">
+                            <i class="bi playListPlay bi-play-circle-fill" id="26"></i>
+                        </div>
+                        <h5>Maniac
+                            <br>
+                            <div class="subtitle">Conan Gray</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/27.jpg" alt="bad">
+                            <i class="bi playListPlay bi-play-circle-fill" id="27"></i>
+                        </div>
+                        <h5>Beggin'
+                            <br>
+                            <div class="subtitle">Måneskin</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/28.jpg" alt="liggi">
+                            <i class="bi playListPlay bi-play-circle-fill" id="28"></i>
+                        </div>
+                        <h5>Bad
+                            <br>
+                            <div class="subtitle">Christropher</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/29.jpg" alt="cinderella">
+                            <i class="bi playListPlay bi-play-circle-fill" id="29"></i>
+                        </div>
+                        <h5>DNA
+                            <br>
+                            <div class="subtitle">BTS</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/30.jpg" alt="Lauv">
+                            <i class="bi playListPlay bi-play-circle-fill" id="30"></i>
+                        </div>
+                        <h5>Dynamite
+                            <br>
+                            <div class="subtitle">BTS</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/31.jpg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="31"></i>
+                        </div>
+                        <h5>Positions
+                            <br>
+                            <div class="subtitle">Ariana Grande</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/32.jpg" alt="Lauv">
+                            <i class="bi playListPlay bi-play-circle-fill" id="32"></i>
+                        </div>
+                        <h5>Life Goes On
+                            <br>
+                            <div class="subtitle">BTS</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/33.jpg" alt="Lauv">
+                            <i class="bi playListPlay bi-play-circle-fill" id="33"></i>
+                        </div>
+                        <h5>Kill Bill
+                            <br>
+                            <div class="subtitle">SZA</div>
+                        </h5>
+                    </li>
+
+
 
                 </div>
             </div>
+
+
+
             <div class="popular-artists">
                 <div class="h4">
                     <h4>Popular Artists</h4>
@@ -312,25 +466,25 @@
                 </div>
                 <div class="item artists">
                     <li>
-                        <img src="/img/a.jpg" alt="Anne Marie" title="Anne Marie">
+                        <img src="/static/img/a.jpg" alt="Anne Marie" title="Anne Marie">
                     </li>
 
                     <li>
-                        <img src="/img/b.jpeg" alt="Charlie Puth" title="Charlie Puth">
+                        <img src="/static/img/b.jpeg" alt="Charlie Puth" title="Charlie Puth">
                     </li>
 
                     <li>
-                        <img src="/img/c.jpg" alt="Imagine Dragons" title="Imagine Dragons">
+                        <img src="/static/img/c.jpg" alt="Imagine Dragons" title="Imagine Dragons">
                     </li>
 
 
 
                     <li>
-                        <img src="/img/e.jpg" alt="Camilla Cabello" title="Camilla Cabello">
+                        <img src="/static/img/e.jpg" alt="Camilla Cabello" title="Camilla Cabello">
                     </li>
 
                     <li>
-                        <img src="/img/f.webp" alt="Taylor Swift" title="Taylor Swift">
+                        <img src="/static/img/f.webp" alt="Taylor Swift" title="Taylor Swift">
                     </li>
 
                     <li>
@@ -338,30 +492,30 @@
                     </li>
 
                     <li>
-                        <img src="/img/h.jpg" alt="Dua Lipa" title="Dua Lipa">
+                        <img src="/static/img/h.jpg" alt="Dua Lipa" title="Dua Lipa">
                     </li>
 
                     <li>
-                        <img src="/img/atif.jpg" alt="Atif Aslam" title="Atif Aslam">
+                        <img src="/static/img/atif.jpg" alt="Atif Aslam" title="Atif Aslam">
                     </li>
                     <li>
-                        <img src="/img/guru.jpg" alt="Guru RAndawa" title="Guru Randawa">
+                        <img src="/static/img/guru.jpg" alt="Guru RAndawa" title="Guru Randawa">
                     </li>
                     <li>
-                        <img src="/img/dhvani.jpg" alt="Dhvani" title="Dhvani">
+                        <img src="/static/img/dhvani.jpg" alt="Dhvani" title="Dhvani">
                     </li>
                     <li>
-                        <img src="/img/Diljit_Dosanjh.jpg" alt="Diljit Dosanjh" title="Diljit Dosanjh">
+                        <img src="/static/img/Diljit_Dosanjh.jpg" alt="Diljit Dosanjh" title="Diljit Dosanjh">
                     </li>
 
                     <li>
-                        <img src="/img/neha.jpg" alt="Neha Kakker" title="Neha Kakker">
+                        <img src="/static/img/neha.jpg" alt="Neha Kakker" title="Neha Kakker">
                     </li>
                     <li>
-                        <img src="/img/justin-bieber-lede.jpg" alt="Justin Bieber" title="Justin Bieber">
+                        <img src="/static/img/justin-bieber-lede.jpg" alt="Justin Bieber" title="Justin Bieber">
                     </li>
                     <li>
-                        <img src="/img/honey.jpg" alt="Honey Singh" title="Honey Singh">
+                        <img src="/static/img/honey.jpg" alt="Honey Singh" title="Honey Singh">
                     </li>
 
                 </div>
@@ -403,6 +557,6 @@
             </div>
         </div>
     </header>
-    <script src="/script.js"></script>
+    <script src="/static/script.js"></script>
 </body>
 </html>

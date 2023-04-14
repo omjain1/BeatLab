@@ -26,8 +26,40 @@ pop_artist_left.addEventListener('click',()=>{
     pop_artist.scrollLeft -= 360;
 });
 
-const music = new Audio('/music/5.mp3');
-const music1 = new Audio('/music/Pink-Venom.mp3');
+
+let pop_song_left2 = document.getElementById('left_scrollf');
+let pop_song_right2 = document.getElementById('right_scrollf');
+let pop_song2 = document.getElementsByClassName('pop-songs2')[0];
+
+
+pop_song_right2.addEventListener('click',()=>{
+    pop_song2.scrollLeft += 360;
+});
+
+
+pop_song_left2.addEventListener('click',()=>{
+    pop_song2.scrollLeft -= 360;
+});
+
+
+let pop_song_left1 = document.getElementById('left_scrolli');
+let pop_song_right1 = document.getElementById('right_scrolli');
+let pop_song1 = document.getElementsByClassName('pop-songs1')[0];
+
+
+pop_song_right1.addEventListener('click',()=>{
+    pop_song1.scrollLeft += 360;
+});
+
+
+pop_song_left1.addEventListener('click',()=>{
+    pop_song1.scrollLeft -= 360;
+});
+
+
+
+const music = new Audio('/static/music//5.mp3');
+const music1 = new Audio('/static/music//Pink-Venom.mp3');
 
 //creating array
 
@@ -78,85 +110,186 @@ const songs = [
         id:'7',
         songName:`Butter
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">BTS</div>`,
-        poster:"/img/1.png"
+        poster:"/static/img/1.png"
     },
 
     {
         id:'8',
         songName:`Let Me Down Slowly
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">Alec Benjamin</div>`,
-        poster:"/img/8.png"
+        poster:"/static/img/8.png"
     },
 
     {
         id:'9',
         songName:`Beaultiful Mistakes<br>
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">Maroon5</div>`,
-        poster:"/img/9.png"
+        poster:"/static/img/9.png"
     },
 
     {
         id:'10',
         songName:`Bad Habits
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">Ed Sheeran</div>`,
-        poster:"/img/10.png"
+        poster:"/static/img/10.png"
     },
 
     {
         id:'11',
         songName:`Liggi
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">Riwitz</div>`,
-        poster:"/img/11.png"
+        poster:"/static/img/11.png"
     },
 
     {
         id:'12',
         songName:`Cinderella's Dead
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">EMELINE</div>`,
-        poster:"/img/12.png"
+        poster:"/static/img/12.png"
     },
 
     {
         id:'13',
         songName:`I Like Me Better
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">Lauv</div>`,
-        poster:"/img/13.png"
+        poster:"/static/img/13.png"
     },
 
     {
         id:'14',
         songName:`2002
         <div class="subtitle" style = "font-size: 11px; color: rgba(255, 255, 255, 0.527);">Anne Marie</div>`,
-        poster:"/img/14.png"
+        poster:"/static/img/14.png"
     },
 
     {
         id:'15',
         songName:`Pink Venom
         <div class="sub">Blackpink</div>`,
-        poster:"/img/blackp.png"
+        poster:"/static/img/blackp.png"
+    },
+
+    {
+        id:'16',
+        songName:`Thousand Miles
+        <div class="sub">Kid Laori</div>`,
+        poster:"/static/img/15.jpg"
+    },
+
+    {
+        id:'17',
+        songName:`Mood
+        <div class="sub">Iann Dior</div>`,
+        poster:"/static/img/16.jpg"
+    },
+
+    {
+        id:'18',
+        songName:`No Lie
+        <div class="sub">Sean Paul</div>`,
+        poster:"/static/img/17.jpg"
+    },
+
+    {
+        id:'19',
+        songName:`At My Worst
+        <div class="sub">Pink Sweat$</div>`,
+        poster:"/static/img/18.jpg"
+    },
+
+    {
+        id:'20',
+        songName:`Golden Hour
+        <div class="sub">JVKE</div>`,
+        poster:"/static/img/19.jpg"
+    },
+
+    {
+        id:'21',
+        songName:`Night Changes
+        <div class="sub">One Direction</div>`,
+        poster:"/static/img/20.jpg"
+    },
+
+    {
+        id:'22',
+        songName:`Money
+        <div class="sub">Lisa</div>`,
+        poster:"/static/img/21.jpg"
+    },
+    {
+        id:'23',
+        songName:`Watermelon Sugar
+        <div class="sub">Harry Style</div>`,
+        poster:"/static/img/22.jpg"
+    },
+    {
+        id:'24',
+        songName:`Infinity
+        <div class="sub">James Young</div>`,
+        poster:"/static/img/23.jpg"
+    },
+    {
+        id:'25',
+        songName:`Left and Right
+        <div class="sub">Charlie Puth</div>`,
+        poster:"/static/img/24.jpg"
+    },
+    {
+        id:'26',
+        songName:`Maniac
+        <div class="sub">Conan Gray</div>`,
+        poster:"/static/img/25.jpg"
+    },
+
+    {
+        id:'27',
+        songName:`beggin'
+        <div class="sub">Måneskin</div>`,
+        poster:"/static/img/26.jpg"
+    },
+
+    {
+        id:'28',
+        songName:`Bad
+        <div class="sub">Christropher</div>`,
+        poster:"/static/img/27.jpg"
+    },
+
+    {
+        id:'29',
+        songName:`DNA
+        <div class="sub">BTS</div>`,
+        poster:"/static/img/28.jpg"
+    },
+
+    {
+        id:'30',
+        songName:`Dynamite
+        <div class="sub">BTS</div>`,
+        poster:"/static/img/29.jpg"
+    },
+
+    {
+        id:'31',
+        songName:`Positions
+        <div class="sub">Ariana Grande</div>`,
+        poster:"/static/img/31.jpg"
+    },
+
+    {
+        id:'32',
+        songName:`Life Goes On
+        <div class="sub">BTS</div>`,
+        poster:"/static/img/31.jpg"
+    },
+
+    {
+        id:'33',
+        songName:`Kill Bill
+        <div class="sub">SZA</div>`,
+        poster:"/static/img/33.jpg"
     }
-
-    // {
-    //     id:'16',
-    //     songName:`My Head & My Heart
-    //     <div class="sub">Seori</div>`,
-    //     poster:"/img/2.jpg"
-    // },
-
-    // {
-    //     id:'17',
-    //     songName:`My Head & My Heart
-    //     <div class="sub">Seori</div>`,
-    //     poster:"/img/2.jpg"
-    // },
-
-    // {
-    //     id:'18',
-    //     songName:`My Head & My Heart
-    //     <div class="sub">Seori</div>`,
-    //     poster:"/img/2.jpg"
-    // },
 
 
 ]
@@ -268,9 +401,9 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
         makeAllPlays();
         el.target.classList.remove('bi-play-circle-fill');
         el.target.classList.add('bi-pause-circle-fill');
-        music.src = `music/${index}.mp3`;
+        music.src = `static/music/${index}.mp3`;
         
-        poster_img_play.src = `/img/${index}.png`;
+        poster_img_play.src = `/static/img/${index}.png`;
         music.play();
         masterPlay.className = "bi bi-pause-fill"
 
@@ -309,9 +442,9 @@ back.addEventListener('click', ()=>{
     }
     
     
-    music.src = `/music/${index}.mp3`;
+    music.src = `/static/music//${index}.mp3`;
     
-    poster_img_play.src = `/img/${index}.png`;
+    poster_img_play.src = `/static/img/${index}.png`;
     music.play();
     
 
@@ -340,9 +473,9 @@ next.addEventListener('click', ()=>{
         index = 1;
         }
     
-    music.src = `/music/${index}.mp3`;
+    music.src = `/static/music//${index}.mp3`;
     
-    poster_img_play.src = `/img/${index}.png`;
+    poster_img_play.src = `/static/img/${index}.png`;
     music.play();
     masterPlay.className = "bi bi-pause-fill";
 
@@ -367,9 +500,9 @@ let banner = document.getElementById('blackpink');
 banner.addEventListener('click', ()=>{
 
     index = 15;
-    music.src = `/music/Pink-Venom.mp3`;
+    music.src = `/static/music//Pink-Venom.mp3`;
     
-    poster_img_play.src = `/img/blackp.png`;
+    poster_img_play.src = `/static/img/blackp.png`;
     music.play();
     masterPlay.className = "bi bi-pause-fill";
 

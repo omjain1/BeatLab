@@ -1,0 +1,120 @@
+body, html {
+    height: 100%;
+  }
+
+  
+  nav{
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav ul{
+
+  display: flex;
+    
+  }
+  nav ul li{
+    position: relative;
+    list-style-type: none;
+    font-size: 13px;
+    color: #828792;
+    font-weight: bold;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: .3s linear;
+  }
+  
+
+  nav ul li:hover{
+
+    color: #ffffff;
+    
+    }
+    nav ul li:nth-child(1){
+    color: #fff;
+    }
+    nav ul li:hover{
+
+      color: #ffffff;
+      
+      }
+    
+
+    nav ul li span{
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    background-color: #36e2ec;
+    bottom: -5px;
+    left: 0;
+    border-radius: 20px;
+    list-style-type: none;
+    }
+
+  nav .log{
+      cursor: pointer;
+      color: rgb(107, 94, 94);
+      
+      margin-left: 700px;
+  }
+  nav .log a{
+    list-style-type: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #61687c;
+    cursor: pointer;
+    transition: .3s linear;
+  }
+
+  nav .log a:hover{
+    color: white;
+}
+
+  nav .user{
+      position: relative;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: inline-flex;
+  }
+
+
+  nav .user img{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 2px 2px 8px #131312;
+  }
+  .bg {
+    background-image: url('https://images.unsplash.com/photo-1420161900862-9a86fa1f5c79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80');
+    background-size: cover;
+    /* background-color: rgb(0, 0, 0); */
+
+    /* Full height */
+    height: 100%;
+    width: 100vw;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+@media (max-width:991px){
+    body{
+      grid-template-columns: 1.5fr 1fr;
+      padding: 10px;
+    
+    }
+}
+
+@media (max-width:863px){
+  body{
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatLab - Web Player</title>
+    <link rel="icon" sizes="32x32" href="/static/img/Marcus-Roberto-Google-Play-Google-Play-Music.512.png">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+
+</head>
+<body>
+    <header>
+        <div class="menu-side">
+            <img src="/static/img/img2.png" style="width: 40px;">
+            <h1>BeatLab</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-house"></i>Home</h4>
+                <h4 class="active"><span></span><i class="bi bi-music-note-list"></i>Last Played</h4>
+                <h4 class="active" ><span></span><i class="bi bi-stack"></i>More Like this</h4>
+            </div>
+            <div class="menu-song">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="https://i.scdn.co/image/ab67616d0000b273f40a36b5fd31d9817c34b070" alt="Seori">
+                    <h5>
+                        Lovers In the Night
+                        <div class="sub">Seori</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="1" style="right: 40px;
+                        position: absolute;"></i>
+                    
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="https://st1.bollywoodlife.com/wp-content/uploads/2022/07/BTS-Bad-Decisions-.jpg" alt="BTS">
+                    <h5>
+                        Bad Decisions
+                        <div class="sub">BTS</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="2" style="right: 40px;
+                        position: absolute;"></i>
+                    
+                </li>
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/20/Dua_Lipa_%28album%29.png" alt="Dua Lipa">
+                    <h5>
+                        New Rules
+                        <div class="sub">Dua Lipa</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="3" style="right: 40px;
+                        position: absolute;"></i>
+                    
+                </li>
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/99c08eac-1777-4459-81b0-341be2da5190/dfgy285-e7919242-7f2f-41c7-9545-a9e00497cf9c.jpg/v1/fill/w_894,h_894,q_70,strp/blackpink_shut_down___born_pink_album_cover__2_by_lealbum_dfgy285-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzQ2NCIsInBhdGgiOiJcL2ZcLzk5YzA4ZWFjLTE3NzctNDQ1OS04MWIwLTM0MWJlMmRhNTE5MFwvZGZneTI4NS1lNzkxOTI0Mi03ZjJmLTQxYzctOTU0NS1hOWUwMDQ5N2NmOWMuanBnIiwid2lkdGgiOiI8PTM0NjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.57QdT7g4FtVAuZ7_XgSNKrFm4iORfRid48jrNWo-c_A" alt="Blackpink">
+                    <h5>
+                        Shut Down
+                        <div class="sub">Blackpink</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="4" style="right: 40px;
+                        position: absolute;"></i>
+                    
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="https://www.africandjspool.com/wp-content/uploads/2018/10/Selena-Gomez-%E2%80%93-Revival.jpg" alt="Selena Gomez">
+                    <h5>
+                        Same Old Love
+                        <div class="sub">Selena Gomez</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="5" style="right: 40px;
+                        position: absolute;"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>06</span>
+                    <img src="https://cdns-images.dzcdn.net/images/cover/0eca025ac1206d710f91c32e49d6e8a8/500x500.jpg" alt="Ava Max">
+                    <h5>
+                        My Head & My Heart
+                        <div class="sub">Ava Max</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="6" style="right: 40px;
+                        position: absolute;"></i>
+                </li>
+                <!-- <li class="songItem">
+                    <span>07</span>
+                    <img src="https://i1.sndcdn.com/artworks-nUJumEgxA52TdRBM-8G0zBA-t500x500.jpg" alt="Sachet Tandon">
+                    <h5>
+                        Barbaadiyan
+                        <div class="sub">Sachet Tandon</div>
+                    </h5>
+                    
+                </li> -->
+            </div>
+        </div>
+        <div class="song-side">
+            
+            <nav>
+                <ul>
+                    <li style="color: #4c5262"><a href="http://127.0.0.1:8000/home">Discover</a></li>
+                    <li><a href="http://127.0.0.1:8000/libiary" style="color: #fff;">My Libiary</a><span></span></li>
+                    <li>Podcast</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="What do you want to Listen to?">  
+                    <div class="search_result">
+                        <!-- <a href="#" class="card">
+                            <img src="/1.png" alt="">
+                            <div class="content">
+                                Lovers In the Night
+                                <div class="sub">Seori</div>
+                            </div>
+                        </a>
+
+                         -->
+                        
+                        
+                    </div>
+                </div>
+                <div class="log">
+                    <a href="http://127.0.0.1:8000/signin">Signin</a>
+                </div>
+                <div class="user" >
+                    <!-- <i class="bi bi-person"></i> -->
+                    
+                    <img src="/static/img/rp.png" alt="user" title="Red Phoenix">
+                </div>
+            </nav>
+            
+            <div class="popular-songs">
+                <div class="h4">
+                    <h4>Popular Songs</h4>
+                    <div class="btn-s">
+                        <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="pop-songs">
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/16.png" alt="Thosuand">
+                            <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+                        </div>
+                        <h5>Thousand Miles
+                            <br>
+                            <div class="subtitle">Kid Laori</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/17.jpg" alt="slowly">
+                            <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
+                        </div>
+                        <h5>Mood
+                            <br>
+                            <div class="subtitle">Iann Dior</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/18.jpg" alt="beautiful">
+                            <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
+                        </div>
+                        <h5>No lie
+                            <br>
+                            <div class="subtitle">Sean Paul</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/19.jpg" alt="bad">
+                            <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
+                        </div>
+                        <h5>At My Worst
+                            <br>
+                            <div class="subtitle">Pink Sweat$</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/20.jpg" alt="liggi">
+                            <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                        </div>
+                        <h5>Golden Hour
+                            <br>
+                            <div class="subtitle">JVKE</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/21.jpg" alt="cinderella">
+                            <i class="bi playListPlay bi-play-circle-fill" id="21"></i>
+                        </div>
+                        <h5>Night Changes
+                            <br>
+                            <div class="subtitle">One Direction</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/22.jpg" alt="Lauv">
+                            <i class="bi playListPlay bi-play-circle-fill" id="22"></i>
+                        </div>
+                        <h5>Money
+                            <br>
+                            <div class="subtitle">Lisa</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/23.jpg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="23"></i>
+                        </div>
+                        <h5>Watermelon Sugar
+                            <br>
+                            <div class="subtitle">Harry Styles</div>
+                        </h5>
+                    </li>
+                </div>
+            </div>
+            
+        <div class="popular-songs">
+                <div class="h4">
+                    <h4>Popular Songs</h4>
+                    <div class="btn-s">
+                        <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="pop-songs">
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/24.jpg" alt="Butter">
+                            <i class="bi playListPlay bi-play-circle-fill" id="24"></i>
+                        </div>
+                        <h5>Infinity
+                            <br>
+                            <div class="subtitle">James Young</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/25.jpg" alt="slowly">
+                            <i class="bi playListPlay bi-play-circle-fill" id="25"></i>
+                        </div>
+                        <h5>Left and Right
+                            <br>
+                            <div class="subtitle">Charlie Puth</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/26.jpg" alt="beautiful">
+                            <i class="bi playListPlay bi-play-circle-fill" id="26"></i>
+                        </div>
+                        <h5>Maniac
+                            <br>
+                            <div class="subtitle">Conan Gray</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/27.jpg" alt="bad">
+                            <i class="bi playListPlay bi-play-circle-fill" id="27"></i>
+                        </div>
+                        <h5>Beggin'
+                            <br>
+                            <div class="subtitle">Måneskin</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/28.jpg" alt="liggi">
+                            <i class="bi playListPlay bi-play-circle-fill" id="28"></i>
+                        </div>
+                        <h5>Bad
+                            <br>
+                            <div class="subtitle">Christropher</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/29.jpg" alt="cinderella">
+                            <i class="bi playListPlay bi-play-circle-fill" id="29"></i>
+                        </div>
+                        <h5>Cinderella's Dead
+                            <br>
+                            <div class="subtitle">EMELINE</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/30.jpg" alt="Lauv">
+                            <i class="bi playListPlay bi-play-circle-fill" id="30"></i>
+                        </div>
+                        <h5>I Like Me Better
+                            <br>
+                            <div class="subtitle">Lauv</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/31.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li>
+
+                    <!-- <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li> -->
+
+                    
+
+                </div>
+            </div>
+
+
+            <div class="popular-songs">
+                <div class="h4">
+                    <h4>Popular Songs</h4>
+                    <div class="btn-s">
+                        <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="pop-songs">
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/7.png" alt="Butter">
+                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                        </div>
+                        <h5>Butter
+                            <br>
+                            <div class="subtitle">BTS</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/2.jpg" alt="slowly">
+                            <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                        </div>
+                        <h5>Let Me Down Slowly
+                            <br>
+                            <div class="subtitle">Alec Benjamin</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/3.jpg" alt="beautiful">
+                            <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                        </div>
+                        <h5>Beaultiful Mistakes
+                            <br>
+                            <div class="subtitle">Maroon5</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/10.png" alt="bad">
+                            <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                        </div>
+                        <h5>Bad Habits
+                            <br>
+                            <div class="subtitle">Ed Sheeran</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/6.jpeg" alt="liggi">
+                            <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                        </div>
+                        <h5>Liggi
+                            <br>
+                            <div class="subtitle">Riwitz</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/7.jpeg" alt="cinderella">
+                            <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                        </div>
+                        <h5>Cinderella's Dead
+                            <br>
+                            <div class="subtitle">EMELINE</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/5.jpeg" alt="Lauv">
+                            <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                        </div>
+                        <h5>I Like Me Better
+                            <br>
+                            <div class="subtitle">Lauv</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li>
+
+                    <!-- <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li> -->
+
+                    
+
+                </div>
+            </div>
+            <div class="popular-songs">
+                <div class="h4">
+                    <h4>Popular Songs</h4>
+                    <div class="btn-s">
+                        <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="pop-songs">
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/7.png" alt="Butter">
+                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                        </div>
+                        <h5>Butter
+                            <br>
+                            <div class="subtitle">BTS</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/2.jpg" alt="slowly">
+                            <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                        </div>
+                        <h5>Let Me Down Slowly
+                            <br>
+                            <div class="subtitle">Alec Benjamin</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/3.jpg" alt="beautiful">
+                            <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                        </div>
+                        <h5>Beaultiful Mistakes
+                            <br>
+                            <div class="subtitle">Maroon5</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/10.png" alt="bad">
+                            <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                        </div>
+                        <h5>Bad Habits
+                            <br>
+                            <div class="subtitle">Ed Sheeran</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/6.jpeg" alt="liggi">
+                            <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                        </div>
+                        <h5>Liggi
+                            <br>
+                            <div class="subtitle">Riwitz</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/7.jpeg" alt="cinderella">
+                            <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                        </div>
+                        <h5>Cinderella's Dead
+                            <br>
+                            <div class="subtitle">EMELINE</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/5.jpeg" alt="Lauv">
+                            <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                        </div>
+                        <h5>I Like Me Better
+                            <br>
+                            <div class="subtitle">Lauv</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li>
+
+                    <!-- <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="/static/img/8.jpeg" alt="anne">
+                            <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
+                        </div>
+                        <h5>2002
+                            <br>
+                            <div class="subtitle">Anne Marie</div>
+                        </h5>
+                    </li> -->
+
+                    
+
+                </div>
+            </div>
+        
+        </div>
+        <div class="master_play" class = "stick">
+
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="https://www.africandjspool.com/wp-content/uploads/2018/10/Selena-Gomez-%E2%80%93-Revival.jpg" alt="Selena" id="poster_img_play">
+            <h5 id="sub1">Same Old Love<br>
+                <div class="sub" id="sub2">Selena Gomez</div>
+            </h5>
+            <div class="icon">
+                <i class="bi bi-skip-start-fill" id="back"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end-fill" id="next"></i>
+                <i class="bi bi-cloud-arrow-down-fill" id="download"></i>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" value="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+
+            </div>
+            <span id="currentEnd">0:30</span>
+            <div class="vol">
+                <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+                <input type="range" id="vol" min="0" max="100">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+    </header>
+    <script src="/static/script.js"></script>
+</body>
+</html>
